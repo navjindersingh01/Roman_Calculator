@@ -133,7 +133,7 @@ class NumberToRoman():
                         roman_list.append("C" + roman_numeral_remainder)
                     else: 
                         roman_list.append("CD")
-                        
+
             elif len(str(i)) == 2: 
                 if i // 50 :
                     remainder = i - 50
@@ -150,7 +150,7 @@ class NumberToRoman():
                     else:
                         roman_list.append("XL")
             
-            elif len(str(i)) ==1:
+            elif len(str(i)) ==1 and i != 0:
                 roman_list.append(self.unit_romans[str(i)])
         
         roman_number = ''.join(roman_list)
